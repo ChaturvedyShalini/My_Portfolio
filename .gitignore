@@ -1,0 +1,97 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.so
+
+# C extensions
+*.obj
+*.o
+*.lo
+*.la
+*.dll
+*.dylib
+*.so
+*.a
+*.int
+*.lib
+*.sln
+*.build
+*.out
+*.exe
+*.iface
+*.manifest
+*.res
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.coverage
+.tox/
+.nox/
+.hypothesis/
+htmlcov/
+.pytest_cache/
+
+# Type checker cache directory
+.mypy_cache/
+.pyre/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Environment
+.env
+.venv
+venv/
+env/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+*.stackdump

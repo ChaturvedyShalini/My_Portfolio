@@ -1,0 +1,91 @@
+<!-- Footer -->
+<footer class="bg-gray-900 dark:bg-gray-950 text-gray-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 items-start">
+            <!-- Brand -->
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">S</span>
+                    </div>
+                    <span class="text-xl font-bold text-white">Shalini Chaturvedy</span>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    Data Analyst passionate about transforming data into actionable insights. Specializing in Cloud & ML technologies.
+                </p>
+                <div class="flex space-x-4">
+                    {% if site_settings.github_url %}
+                    <a href="{{ site_settings.github_url }}" target="_blank" rel="noopener noreferrer"
+                       class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    {% endif %}
+                    {% if site_settings.linkedin_url %}
+                    <a href="{{ site_settings.linkedin_url }}" target="_blank" rel="noopener noreferrer"
+                       class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    {% endif %}
+                    {% if site_settings.twitter_url %}
+                    <a href="{{ site_settings.twitter_url }}" target="_blank" rel="noopener noreferrer"
+                       class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-sky-500 hover:text-white transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    {% endif %}
+                    <a href="mailto:{{ site_settings.email }}"
+                       class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-accent-500 hover:text-white transition-all duration-300 hover:scale-110">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-400 hover:text-primary-400 transition-colors">About Me</a></li>
+                    <li><a href="#skills" class="text-gray-400 hover:text-primary-400 transition-colors">Skills</a></li>
+                    <li><a href="#experience" class="text-gray-400 hover:text-primary-400 transition-colors">Experience</a></li>
+                    <li><a href="#projects" class="text-gray-400 hover:text-primary-400 transition-colors">Projects</a></li>
+                    <li><a href="#certifications" class="text-gray-400 hover:text-primary-400 transition-colors">Certifications</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-primary-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Contact Info</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-map-marker-alt text-primary-400"></i>
+                        <span class="text-gray-400">{{ site_settings.location }}</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-primary-400"></i>
+                        <a href="mailto:{{ site_settings.email }}" class="text-gray-400 hover:text-primary-400 transition-colors">
+                            {{ site_settings.email }}
+                        </a>
+                    </li>
+                    {% if site_settings.phone %}
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-primary-400"></i>
+                        <span class="text-gray-400">{{ site_settings.phone }}</span>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; {% now "Y" %} {{ site_settings.name }}. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Built with <i class="fas fa-heart text-red-500 mx-1"></i> using Django & Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
